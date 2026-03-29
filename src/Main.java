@@ -8,5 +8,19 @@ public class Main {
         System.out.println("Czy produkty są równe? " + p1.equals(kopiaEspresso));
 
         KlientKawiarni klient = new KlientKawiarni(100, "Julia", "Mazur", "j.mazur@mail.pl");
+
+        Zamowienie zamowienie = new Zamowienie(klient);
+        zamowienie.dodajProdukt(p1);
+        zamowienie.dodajProdukt(p2);
+        zamowienie.dodajProdukt(p3);
+
+        System.out.println(klient);
+        System.out.println(zamowienie);
+        System.out.println("Łączna wartość: " + zamowienie.policzWartosc());
+        System.out.println("Liczba pozycji: " + zamowienie.policzLiczbeProduktow());
+        System.out.println("Liczba produktów utworzonych w systemie: " + ProduktMenu.getLiczbaProduktow());
+
+        zamowienie.oznaczJakoOplacone();
+        System.out.println(zamowienie);
     }
 }
