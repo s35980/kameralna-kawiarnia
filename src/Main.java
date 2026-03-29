@@ -3,5 +3,8 @@ public class Main {
         ProduktMenu p1 = new ProduktMenu("K-01", "Espresso", 9.0, "kawa");
         ProduktMenu p2 = new ProduktMenu("K-02", "Cappuccino", 13.5, "kawa");
         ProduktMenu p3 = new ProduktMenu("D-01", "Sernik", 16.0, "deser");
+
+        ProduktMenu kopiaEspresso = new ProduktMenu("K-01", "Espresso duplikat", 9.0, "kawa");
+        System.out.println("Czy produkty są równe? " + p1.equals(kopiaEspresso));
     }
 }
