@@ -6,5 +6,7 @@ public class Main {
 
         ProduktMenu kopiaEspresso = new ProduktMenu("K-01", "Espresso duplikat", 9.0, "kawa");
         System.out.println("Czy produkty są równe? " + p1.equals(kopiaEspresso));
+
+        KlientKawiarni klient = new KlientKawiarni(100, "Julia", "Mazur", "j.mazur@mail.pl");
     }
 }

@@ -41,7 +41,7 @@ public class ProduktMenu {
                 "kod ='" + kod + '\'' +
                 ", nazwa='" + nazwa + '\'' +
                 ", cena='" + cena + '\'' +
-                ", kategoria='" + kategoria + '\'' + "}";
+                ", kategoria='" + kategoria + '\'' + '}';
     }
 
     @Override
